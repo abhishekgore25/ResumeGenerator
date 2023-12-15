@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+</head>
+<body class=>
+    <!-- form -->
+    <div id="formdiv">
+        <h1 class="text-center my-2">Resume Generator</h1>
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center my-3">Personal Details</h3>
+
+                    <label for="name" class="my-2 mx-2">Your Name:</label>
+                    <input type="text" name="name" id="forname" class="form-control my-0.5" placeholder="Enter Full Name">
+
+                    <label for="phone" class="my-2 mx-2">Your Phone:</label>
+                    <input type="text" name="phone" id="forphone" class="form-control my-0.5" placeholder="Enter Phone">
+
+                    <label for="address" class="my-2 mx-2">Your Address:</label>
+                    <textarea name="text" id="foraddress" cols="30" rows="3" class="form-control" placeholder="Enter Address"></textarea>
+
+                    <label for="info" class="my-3 mx-2">Important Links</label>
+                    <br>
+                    <label for="facebook" class="my-2 mx-2">facebook:</label>
+                    <input type="text" name="facebook" id="forfacebook" class="form-control my-0.5" placeholder="facebook ID">
+
+                    <label for="LinkedIn" class="my-2 mx-2">LinkedIn:</label>
+                    <input type="text" name="LinkedIn" id="forLinkedIn" class="form-control my-0.5" placeholder="LinkedIn ID">
+
+                    <label for="pic" class="my-2 mx-2">Upload Picture</label>
+                    <input type="file" name="pic" id="forpic" class="form-control my-0.5">
+
+                </div>
+
+                <div class="col" id="divpro">
+                    <h3 class="text-center my-3">Professional Details</h3>
+                    
+                    <label for="objective" class="my-2 mx-2">Objective:</label>
+                    <textarea name="text" id="forobjective" cols="30" rows="3" class="form-control" placeholder="Enter Objective"></textarea>
+                    
+
+                    <label for="Education" class="my-2 mx-2">Education Details:</label>
+                    <textarea name="text" id="forEducation" cols="30" rows="3" class="form-control edu" placeholder="Enter Educational Detail"></textarea>
+                    
+                    <div class="container text-center" id="add1">
+                        <button type="button" class="btn btn-outline-primary my-2" onclick="funAdd1()">Add</button>
+                    </div>
+
+                    <label for="workexperience" class="my-2 mx-2 we" >Work Experience:</label>
+                    <textarea name="text" id="forworkexperience" cols="30" rows="3" class="form-control we" placeholder="Enter WorkExperience"></textarea>
+                    
+                    <div class="container text-center" id="add2">
+                        <button type="button" class="btn btn-outline-primary my-2" onclick="funAdd2()">Add</button>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+            <div class="container text-center">
+            <button type="button" class="btn btn-outline-success my-5" onclick="generate()">Generate Resume</button>
+            </div>
+        </form>
+    </div>
+
+<div id="templatediv">
+    <!-- template -->
+    <div id="templatediv"  class="fonts margin">
+        
+        <h1 class="text-center my-2">Resume</h1><hr>
+        <div class="text-center">
+            <img src="https://www.littler.com/files/styles/adaptive/public/kuretzky_barry_05630_1.png?itok=cR0TeWoj" id="pic">
+        </div>
+        <div id="personalInfo" class="mx-5">
+          
+          <p id="name">Name: Abhsiek gore</p>
+          <p id="phone">Contact Number:06362763628</p>
+          <p id="address">Address:hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+          <a id="fb" >@facebooklink</a>
+          <a id="li" >@linkedin</a>
+          <hr>
+
+        </div>
+
+        <div  class="fonts mx-5">
+            <h3 class="text-center">Objective</h3>
+            <hr>
+            <p id="objective">
+                uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+                uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+                uuuAbhjjjjjjjjjjjjjjjjjjjjjjjdjdjjjjjjjjjjjjjjsiek gore</p> <hr>
+        </div>
+           
+        <div  class="fonts mx-5">
+            <h3 class="text-center">Education</h3>
+            <hr>
+            <ul id="education">
+                <li>first</li>
+                <li>second</li>
+                <li>third</li>
+            </ul><hr>
+        </div>
+            
+
+        <div  class="fonts mx-5">
+            <h3 class="text-center">WorkExperience</h3>
+            <hr>
+            <ul id="workexperience">
+                <li>first</li>
+                <li>second</li>
+            </ul>
+        </div>
+
+        <div  class="fonts mx-5">
+            <h3 class="text-center">Declaration</h3>
+            <hr>
+            <p id="declaration">
+                I hereby declare that the details and information given above are complete and true to the best of my knowledge
+                by declare that the above particulars of facts and information stated are true, correct and complete to the best of my belief and knowledge.    
+            </p>
+        </div>
+        <div class="container text-center">
+            <button type="button" class="btn btn-outline-success my-5" onclick="print()">Print</button>
+            </div>
+
+            
+    </div>
+    <div class="text-center my-5">
+        <button onclick="cancel()" class="btn btn-outline-danger">Cancel</button>
+    </div>
+</div>
+   
+    
+
+
+    <script src="work.js"></script>
+
+
+
+
+
+
+</body>
+</html>

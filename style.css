@@ -1,0 +1,25 @@
+
+
+#formdiv{
+
+background-color:burlywood;
+};
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  img {
+    border-radius: 70%;
+    }
+
+ .fonts{
+    font-size: 15px;
+ }   
+ .margin{
+    width: 210mm;
+    height: 297mm;
+    border-style: double;
+ }
